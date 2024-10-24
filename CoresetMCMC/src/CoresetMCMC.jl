@@ -1,4 +1,4 @@
-module CoresetMCMC
+module CoresetMCMCSampler
 
 using Plots
 using Statistics

@@ -19,3 +19,7 @@ function log_reg_stratified_sampling(model, M, rng)
 
     return inds
 end
+
+function compute_metric(batch_mean, μp, dΣp)
+    return mean((batch_mean - μp).^2 ./ dΣp)
+end
